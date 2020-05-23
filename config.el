@@ -52,4 +52,9 @@
 ;; You can also try 'gd' (or 'C-c g d') to jump to their definition and see how
 ;; they are implemented.
 ;;
+
+;; https://stackoverflow.com/questions/28351465/emacs-orgmode-do-not-insert-line-between-headers
 (setf org-blank-before-new-entry '((heading . nil) (plain-list-item . nil)))
+
+;; https://stackoverflow.com/questions/648817/how-to-bind-esc-to-keyboard-escape-quit-in-emacs
+(global-set-key (kbd "<escape>")      'keyboard-escape-quit)
